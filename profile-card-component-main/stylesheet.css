@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+body {
+  font-size: 18px;
+  color: hsl(229, 23%, 23%);
+  overflow: hidden;
+}
+.main {
+  background-color: hsl(185, 75%, 39%);
+  min-width: 100vw;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.container {
+  border-radius: 20px;
+  text-align: center;
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.top-bg {
+  position: absolute;
+  background: url(images/bg-pattern-top.svg);
+  background-size: contain;
+  float: left;
+  background-repeat: no-repeat;
+  height: 1030px;
+  width: 1030px;
+  left: -284px;
+  top: -527px;
+}
+.bottom-bg {
+  position: absolute;
+  background: url(images/bg-pattern-bottom.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 1030px;
+  width: 1030px;
+  right: -280px;
+  bottom: -610px;
+}
+
+.background-card-img {
+  position: relative;
+  margin-bottom: 30px;
+}
+.background-card {
+  position: relative;
+
+  width: 340px;
+  border-radius: 20px 20px 0 0;
+  top: 0;
+  left: 0;
+}
+.profile-img {
+  border-radius: 50%;
+  border: 5px solid #fff;
+
+  position: absolute;
+  display: block;
+  left: 50%;
+  transform: translate(-50%);
+  top: 62%;
+}
+.profile-name {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.profile-city {
+  margin-bottom: 23px;
+  color: hsl(0, 0%, 59%);
+}
+.main-content {
+  margin-top: 30px;
+  min-width: 340px;
+  border-bottom: 1px solid hsl(0, 0%, 88%);
+}
+.age {
+  color: hsl(0, 0%, 59%);
+  font-weight: 300;
+  margin-left: 2px;
+}
+.col-3-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  line-height: 1.6;
+  margin: 23px 0;
+}
+.number {
+  font-weight: 700;
+  font-size: 18px;
+}
+.describe {
+  color: hsl(0, 0%, 59%);
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: 300;
+}
+@media only screen and (max-width: 600px) and (min-width: 375px) {
+  .main {
+    width: 100%;
+  }
+}

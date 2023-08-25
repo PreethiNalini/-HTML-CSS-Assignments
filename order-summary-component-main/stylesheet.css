@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  color: hsl(223, 47%, 23%);
+  background-color: hsl(225, 100%, 94%);
+  overflow: hidden;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.main-header {
+  min-width: 100wh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("./images/pattern-background-desktop.svg") no-repeat;
+  background-position: top;
+  background-size: contain;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 20px;
+  z-index: 2;
+}
+.hero-pic {
+  border-radius: 20px 20px 0 0;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.order-summary-title {
+  font-size: 26px;
+}
+.order-summary-description {
+  color: hsl(224, 23%, 55%);
+  text-align: center;
+  width: 80%;
+  margin: 15px 0;
+}
+.music-icon {
+  width: 80%;
+  border-radius: 12px;
+  display: flex;
+  padding: 15px;
+  background-color: hsl(225, 100%, 98%);
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.music-icon-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.music-plan {
+  font-weight: 900;
+  font-size: 16px;
+}
+.music-amount {
+  font-size: 15px;
+  color: hsl(224, 23%, 55%);
+}
+.music-symbol {
+  width: 50px;
+}
+a.Change {
+  color: hsl(245, 75%, 52%);
+  margin-top: 5px;
+  font-weight: 700;
+}
+a:active {
+  text-decoration: none;
+  color: hsl(245, 75%, 52%);
+}
+.proceed {
+  width: 80%;
+  padding: 13px;
+  border-radius: 10px;
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 100%);
+  font-weight: 700;
+  border: none;
+  font-size: 18px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+.proceed:active {
+  background-color: hsl(245, 67%, 64%);
+}
+a.cancel {
+  color: hsl(224, 23%, 55%);
+  margin: 20px 0;
+  text-decoration: none;
+  font-weight: 700;
+}
+a.cancel:active {
+  color: hsl(223, 47%, 23%);
+}
+/* responsive view */
+
+@media only screen and (max-width: 480px) {
+  .main-header {
+    background: url("./images/pattern-background-mobile.svg") no-repeat;
+    background-position: center;
+  }
+  .container {
+    width: 90%;
+  }
+}
