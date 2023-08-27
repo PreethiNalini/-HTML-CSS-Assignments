@@ -151,8 +151,7 @@ body {
   .sign-up-components {
     width: 100%;
   }
-  .claim-free {
-    padding: 0 50px;
+  .claim-free { 
     line-height: 1.5;
     font-size: 12px;
   }
