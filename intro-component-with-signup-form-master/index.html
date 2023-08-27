@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="stylesheet.css" />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="sub-container">
+      <div class="main-content">
+        <h1 class="heading">Learn to code by watching others</h1>
+        <p class="heading-info">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+
+      <div class="sign-up-components">
+        <button class="trial">
+          Try it free 7 days <span class="trial-top">then $20/mo. thereafter</span> 
+        </button>
+        <form class="sign-up-box" id="form">
+         
+          <div class="form-control"><input type="text" placeholder="First Name" class="first-name input-box" id="fname"/>
+            <p class="error">first name not be empty</p>
+        </div> 
+        <div  class="form-control">
+          <input type="text" placeholder="Last Name" class="last-name input-box" id="lname"/>
+        <span class="error">last name not be empty</span>
+      </div>
+        <div  class="form-control">
+           <input type="email" placeholder="Email Address" class="email input-box" id="email"/>
+          <span class="error">Email Address not be empty</span>
+        </div>  
+         <div  class="form-control">  <input type="password" placeholder="Password" class="Password input-box" id="password" />
+        <small class="error" >password not be empty</small>
+       
+      </div>
+        
+          <button class="free-trial" type="submit" >Claim your free trial</button>
+          <p class="claim-free">
+            By clicking the button, you are agreeing to our <span class="Terms"
+              >Terms and Services</span
+            >
+          </p>
+        </form>
+      </div>
+    </section>
+  </div>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Preethi S</a>.
+      </p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
